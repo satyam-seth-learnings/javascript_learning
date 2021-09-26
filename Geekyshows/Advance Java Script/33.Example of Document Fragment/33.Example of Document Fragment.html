@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1>We are Learning JavaScript</h1>
+            <h1>I am h1</h1>
+        </div>
+        <script>
+            // Creating Empty Document Fragment
+            var df=document.createDocumentFragment();
+
+            // Creating New Element h3
+            var hNode=document.createElement("h3");
+
+            // Creating New Element p
+            var pNode=document.createElement("p");
+
+            // text for New h3 and p Element
+            hNode.textContent="H3 fron JS";
+            pNode.textContent="p fron JS";
+
+            // Appending Nodes to DF
+            df.appendChild(hNode);
+            df.appendChild(pNode);
+            // console.log(df);
+            
+            var targetNode=document.getElementById("myid");
+            
+            // Append DF to Div
+            targetNode.appendChild(df);
+            console.log(df);
+        </script>
+    </body>
+</html>

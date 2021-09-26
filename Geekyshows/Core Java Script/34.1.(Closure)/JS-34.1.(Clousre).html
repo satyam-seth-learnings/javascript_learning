@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			var i=10;
+			function show()
+			{
+				var j=20;
+				document.write(i+"<br>");
+				document.write(j+"<br>");
+			}
+			show();
+			function disp()
+			{
+				var m="M a Local Variable Of Outer function";
+				document.write(m+"<br>");
+				function play()
+				{
+					var n="N a Local Variable Of Outer function";
+					document.write(n+"<br>");
+					document.write(m+"<br>");
+				}
+				play();
+			}
+			disp();
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

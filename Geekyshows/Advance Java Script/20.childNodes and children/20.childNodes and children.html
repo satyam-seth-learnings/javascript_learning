@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tree</title>
+    </head>
+    <body id="myid">
+        <h1 id="myid0">
+            <!-- This is Comment -->
+            <span>We are Learning JS</span>
+            <em>Hello</em>
+        </h1>
+        <p id="myid1">I am Paraghraph</p>
+        <p id="myid2">
+            <span>I am span</span>
+            I am Paraghraph
+        </p>
+        <script>
+            // childNodes vs children
+            // Example-1
+            // var result=document.getElementById("myid");
+            // // console.log(result.childNodes);
+            // console.log(result.children);
+       
+            // Example-2
+            // var result=document.getElementById("myid0");
+            var result=document.getElementById("myid2");
+            // console.log(result.childNodes);
+            console.log(result.children);
+
+            // Example-3
+            // Length
+            var result=document.getElementById("myid0");
+            // var len=result.childNodes.length;
+            var len=result.children.length;
+            console.log(len);
+            // console.log(result.childNodes);
+            console.log(result.children);
+
+            // Example-4
+            // Loop
+            var result=document.getElementById("myid0");
+            console.log(result.childNodes[0]);
+            console.log(result.childNodes[1]);
+            console.log(result.childNodes[2]);
+            console.log(result.children[0]);
+            console.log(result.children[1]);
+            // var chlen=result.childNodes.length;
+            var chlen=result.children.length;
+            for(let i=0;i<chlen;i++)
+            {
+                // console.log(result.childNodes[i]);
+                console.log(result.children[i]);
+                document.write(result.children[i].textContent);
+            }
+            result.children[0].textContent="I am learning DOM";
+            console.log(result.children[0].textContent);
+            console.log(result.childNodes[0].textContent);
+            document.write(result.childNodes[0].textContent);
+        </script>
+    </body>
+</html>

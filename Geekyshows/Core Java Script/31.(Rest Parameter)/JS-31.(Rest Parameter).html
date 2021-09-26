@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Rest Parameter
+			function show(...args)
+			{
+				document.write(args);
+			}
+			show(10);
+			show(20,30,40,50);
+			function display(a,...args)
+			{
+				document.write(a);
+				document.write(args);
+				document.write(args[0]);
+				document.write(args[2]);
+			}
+			display(10);
+			display(20,30,40,50);
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

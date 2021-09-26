@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <h1 title="myheading">Heading 1</h1>
+        <img src="cat.jpg" alt="catimage" width="30%" height="20%">
+        <!-- <img src="js.png" alt="jsimage" width="30%" height="10%"> -->
+        <img src="js.png" alt="jsimage" width="30%" height="20%">
+        <!-- <a href=""></a> -->
+        <div>
+            <ul id="myl">
+                <li class="game">Item 1</li>
+                <li class="supergame">Item 2</li>
+                <li class="game-super">Item 3</li>
+                <li class="gamesuper">Item 4</li>
+                <li class="super-game">Item 5</li>
+                <li class="game super">Item 6</li>
+                <li class="super game">Item 7</li>
+                <li class="super">Item 8</li>
+            </ul>
+            <!-- <ul class="mylist">
+                <li>Java</li>
+                <li>PHP</li>
+                <li>JS</li>
+                <li>NodeJs</li>
+                <li>Go</li>
+            </ul> -->
+        </div>
+        <p title="mypara1" class="red black">This is paragraph 1</p>
+        <p title="mypara2" class="red">This is paragraph 2</p>
+        <p title="mypara3" class="black">This is paragraph 3</p>
+        <p title="mypara4" id="book">This is paragraph 4</p>
+        <p>This is paragraph 5</p>
+        <h3 class="red">Heading 3</h3>
+        <h4 id="book">Heading 4</h4>
+        <script>
+            // CSS Selector DOM
+            // Element Selector
+            var list=document.querySelectorAll('p');
+            console.log(list);
+            console.log(list.length);
+            console.log(list[0]);
+            // var list=document.querySelectorAll('div,p');
+            var list=document.querySelectorAll('div,p,li');
+            console.log(list);
+            
+            // Universal Selector
+            var list=document.querySelectorAll('*');
+            console.log(list);
+            
+            // Class Selector or Style Selector
+            // Universal Style Class
+            var list=document.querySelectorAll('.game');
+            console.log(list);
+            
+            // Element Specific Style Class
+            // var list=document.querySelectorAll('.red');
+            var list=document.querySelectorAll('p.red');
+            console.log(list);
+            
+            // Element Specific Style Class - More Specific
+            var list=document.querySelectorAll('p.red.black');
+            console.log(list);
+            
+            // ID Selector
+            // var list=document.querySelectorAll('#book');
+            var list=document.querySelectorAll('p#book');
+            console.log(list);
+            
+            // Attribute Selector
+            // var list=document.querySelectorAll('p[title]');
+            // var list=document.querySelectorAll('p[title="mypara1"]');
+            // var list=document.querySelectorAll("p[title='mypara1']");
+            var list=document.querySelectorAll('img[width="30%"][height="20%"]');
+            console.log(list);
+            // var list=document.querySelectorAll('[class ~= "game"]');
+            // var list=document.querySelectorAll('[class |= "game"]');
+            // var list=document.querySelectorAll('[class ^= "game"]');
+            // var list=document.querySelectorAll('[class $= "game"]');
+            var list=document.querySelectorAll('[class *= "ga"]');
+            console.log(list);
+            
+            // Pseduo Class
+            // first-child
+            // var list=document.querySelectorAll('li:first-child');
+            // var list=document.querySelectorAll(':first-child');
+            // var list=document.querySelectorAll('li:last-child');
+            // var list=document.querySelectorAll(':last-child');
+            // nth child
+            // var list=document.querySelectorAll('li:nth-child(1)');
+            // var list=document.querySelectorAll('li:nth-child(3)');
+            // var list=document.querySelectorAll('li:nth-child(even)');
+            // var list=document.querySelectorAll('li:nth-child(odd)');
+            // var list=document.querySelectorAll('li:nth-last-child(1)');
+            var list=document.querySelectorAll(':empty');
+            console.log(list);     
+        </script>
+    </body>
+</html>

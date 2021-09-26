@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1 id="myid">
+            <!-- This is Comment -->
+            <span>We are Learning JS</span>
+            <em>Hello</em>
+        </h1>
+        <p id="myid1">I am Paraghraph</p>
+        <p id="myid2">
+            <span>I am span</span>
+            I am Paraghraph
+        </p>
+        <script>
+            var result=document.getElementById("myid");
+            console.log(result.lastChild);
+            console.log(result.lastElementChild);
+            // document.write(result.lastElementChild.textContent);
+            // result.lastElementChild.textContent="Last Node Hoo Main";
+            // document.write(result.lastChild.textContent);
+            result.lastChild.textContent="Last Element Node Hoo Main";
+        </script>
+    </body>
+</html>

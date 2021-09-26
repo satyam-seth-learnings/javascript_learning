@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <table border="1" id="mytab">
+            <caption>My Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>11</td>
+                    <td>Rahul</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Sonam</td>
+                    <td>PHP</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>33</td>
+                    <td>Rohan</td>
+                    <td>JSP</td>
+                </tr>
+            </tfoot>
+        </table>
+        <script>
+            var table=document.getElementById("mytab");
+            
+            var tcap=table.caption;
+            console.log(tcap);
+            document.write(tcap.innerHTML+"<br>");
+            tcap.innerHTML="New Caption";
+
+            var thed=table.tHead;
+            console.log(thed);
+            document.write(thed.innerHTML+"<br>");
+            thed.innerHTML="<tr><th>No</th><th>Student</th><th>Koras</th></tr>";
+            
+            var tfut=table.tFoot;
+            console.log(tfut);
+            document.write(tfut.innerHTML+"<br>");
+            tfut.innerHTML="<tr><td>100</td><td>Dell</td><td>Intel</td></tr>";
+            
+            var bodi=table.tBodies;
+            console.log(bodi);
+            console.log(bodi[0]);
+            document.write(bodi[0].innerHTML);
+        </script>
+    </body>
+</html>

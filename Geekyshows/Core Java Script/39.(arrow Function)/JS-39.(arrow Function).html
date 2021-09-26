@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Function Expression
+			var myfun1=function show()
+							{
+								document.write("GeekyShows");
+							};
+			//	Anonymous Function
+			var myfun2=function()
+							{
+								document.write("GeekyShows");
+							};
+			//	Arrow Function
+			//	myfun3();		Error
+			var myfun3=()=>
+					{
+						document.write("GeekyShows");
+					};
+			myfun3();
+			//	Arrow Function With Parameter
+			var myfun4=(a)=>	//	var myfun4=a=>
+					{
+						document.write(a);
+					};
+			myfun4(10);
+			var myfun5=a=>document.write(a);
+			myfun5(5);
+			var myfun6=(a,b)=>
+					{
+						document.write(a+" "+b);
+					};
+			myfun6(20,40);
+			// Arrow Function With Default Parameter
+			var myfun7=(a,b=30)=>
+					{
+						document.write(a+" "+b);
+					};
+			myfun7(50,70);
+			myfun7(80);
+			// Arrow Function With Rest Parameter
+			var myfun8=(a,...args)=>
+					{
+						document.write(a+" "+args);
+					};
+			myfun8(101,102,103,104,105);
+			//	Function Expression
+			var fun1=function disp()
+								{
+									return a;
+								};
+			// Anonymous Function
+			var fun2=function(b)
+							{	
+								return b;
+							}
+			//	Arrow Function
+			var fun3=c=>{return c;};
+			var fun4=d=>d;	//	var fun4=d=>(d);	undefine
+			document.write(fun3(77));
+			document.write(fun4(99));
+			var fun5=(e,f)=>e+f;	// var fun5=(e,f)=>(e+f);	undefine
+			document.write(fun5(8,3));
+			var fun6=(g,h)=>
+						{
+							return g+h;	//	return (g+h);
+						};
+			document.write(fun6(8,3));
+			// Function Declaration
+			function prt(a,b)
+						{
+							return a+b;
+						}
+			document.write(prt(88,77));
+			//	Arrow Function
+			var a=(a,b)=>a+b;
+			document.write(a(88,77));
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+	</head>
+	<body>
+		<p>Prototype</p>
+		<script>
+			//	It will return Object.prototype
+			console.log(Object.prototype);
+			var a={};
+			console.log(Object.getPrototypeOf(a));
+			console.log(Object.getPrototypeOf(Object.prototype));
+			var b=new Object();
+			console.log(Object.getPrototypeOf(b));
+			console.log(Object.getPrototypeOf(Object.prototype));
+			var c=new Array();
+			console.log(Object.getPrototypeOf(c));
+			console.log(Object.getPrototypeOf(Array.prototype));
+			console.log(Object.getPrototypeOf(Object.prototype));
+			var d=new String();
+			console.log(Object.getPrototypeOf(d));
+			console.log(Object.getPrototypeOf(String.prototype));
+			console.log(Object.getPrototypeOf(Object.prototype));
+		</script>
+	</body>
+</html>

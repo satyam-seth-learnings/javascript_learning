@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			var Mobile=function(model_no)
+						{	
+							//	Instance Member
+							this.model=model_no;
+							this.price=3000;
+						};
+			var samsung=new Mobile('Galaxy');
+			var nokia=new Mobile('3310');
+			/*	samsung.color='white';
+				nokia.color='white';	*/
+			//	Prototype	Member
+			Mobile.prototype.color="white";
+			document.write(Object.keys(samsung));
+			for(var key in samsung)
+			{
+				document.write(key);
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

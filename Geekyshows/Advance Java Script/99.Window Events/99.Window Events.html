@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <!-- Example-1 -->
+    <!-- <body onload="alert('Hello Window')"> -->
+    <body>
+        <div id="mydiv"></div>
+        <script>
+            // Example-2
+            // window.onload=function(){
+            //     document.getElementById("mydiv").textContent="Hello Window";
+            // }
+            
+            // Exapmle-3
+            function show(){
+                document.getElementById("mydiv").textContent="Hello Window";
+            }
+            window.addEventListener("load",show);
+        </script>
+    </body>
+</html>

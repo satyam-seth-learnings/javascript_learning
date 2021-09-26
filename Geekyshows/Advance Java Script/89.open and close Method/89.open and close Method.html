@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <h1>Window Open</h1>
+        <!-- Example-1 -->
+        <!-- <button type="button" id="btn">Create New Window</button> -->
+        
+        <!-- Example-3 -->
+        <button id="kloj">Close New Window</button>
+        <script>
+            // Example-1
+            // // window.open();
+            // // var newWindow=window.open();
+            // // document.write(newWindow);
+            // function createWindow(){
+            //     window.open();
+            // }
+            // document.getElementById("btn").addEventListener("click",createWindow);
+
+            // Example-2
+            // var newWindow=window.open("https://www.twitter.com");
+            // var newWindow=window.open("https://www.twitter.com","_blank");
+            // var newWindow=window.open("https://www.twitter.com","_blank","height=400,width=600");
+
+            // var newWindow=window.open("","_blank","height=400,width=600");
+            // newWindow.document.write("Main New Window Hoon");
+
+            // // var newWindow=window.open("https://www.geekyshows.com","_black","height=400,width=600");
+            // var newWindow=window.open("https://www.geekyshows.com","_black","height=400,width=600","scrollbars=no");
+
+            // Example-3
+            // var newWindow=window.open("http://www.twitter.com","_blank","height=400,width=600");
+            var newWindow=window.open("","_blank","height=400,width=600");
+            newWindow.document.write("Main New Window ka Content Hoon");
+            function ekjit(){
+                newWindow.document.close();
+                newWindow.close();
+            }
+            document.getElementById("kloj").addEventListener("click",ekjit);
+        </script>
+    </body>
+</html>

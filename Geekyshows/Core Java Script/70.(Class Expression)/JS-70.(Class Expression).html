@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+           // Class Expression
+           var Mobile=class Mobile2{    //Or var Mobile=class {
+                    constructor(model_no,color){
+                        this.model=model_no;
+                        this.clr=color;
+                    }
+                    show(){
+                        return this.model+" Price Rs. 3000 "+this.clr;
+                    }
+           };
+           var nokia=new Mobile('Galaxy','White');
+           var lg=new Mobile('note4','Balck');
+           document.write(nokia.show()+"<br>");
+           document.write(lg.show());
+        </script>
+    </body>
+</html>

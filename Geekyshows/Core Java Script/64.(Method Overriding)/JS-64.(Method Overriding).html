@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            // Function for Inheritance
+            function extend(child,parent)
+            {
+                child.prototype=Object.create(parent.prototype);
+                child.prototype.constructor=child;
+            }
+            // Super Class
+            var Mobile=function()
+            {
+            }
+            // Prototype Member
+            Mobile.prototype.show=function()
+            {
+                return "Super Class Method";
+            }
+            // Sub Class
+            var Samsung=function()
+            {
+            }
+            // Sub Class Samsung extending super class Mobile
+            extend(Samsung,Mobile);
+
+            Samsung.prototype.show=function()
+            {
+                return "Sub Class Method";
+            }
+            // Creating object of sub class Samsung
+            var sam=new Samsung();
+            var mob=new Mobile();
+            // Accessing Super class property model using sub class object
+            document.write(sam.show());
+            document.write(mob.show());
+        </script>
+    </body>
+</html>

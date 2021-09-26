@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            // Function for Inheritance
+            function extend(child,parent)
+            {
+                child.prototype=Object.create(parent.prototype);
+                child.prototype.constructor=child;
+            }
+            // Super Class
+            var Human=function()
+            {
+            }
+            // Prototype Member
+            Human.prototype.eat=function()
+            {
+                return "Super Class eat Method 1";
+            }
+            Human.prototype.walk=function()
+            {
+                return "Super Class walk Method 2";
+            }
+            Human.prototype.talk=function()
+            {
+                return "Super Class talk Method 3";
+            }
+            // Sub Class Animal
+            var Animal=function()
+            {
+            }
+            // Sub Class Animal extending super class Human
+            extend(Animal,Human);
+            
+            // Sub Class Robot
+            var Robot=function()
+            {
+            }
+            // Sub Class Robot extending super class Human
+            extend(Robot,Human);
+        </script>
+    </body>
+</html>

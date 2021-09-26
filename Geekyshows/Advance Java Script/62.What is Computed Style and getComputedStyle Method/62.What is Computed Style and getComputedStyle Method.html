@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                font-style: italic;
+                font-size: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass1" style="color: yellowgreen;">Paragraph</p>
+        <script>
+            var p=document.getElementById("myp");
+            var allCSSProp=window.getComputedStyle(p);
+            // console.log(allCSSProp);
+            // console.log(allCSSProp[0]);
+            console.log(allCSSProp.fontStyle);
+            console.log(allCSSProp.fontSize);
+            // allCSSProp.fontSize="80px"; // Error Read Only
+            var cs=p.style;
+            console.log(cs.fontSize);
+            console.log(cs.color);
+            cs.fontSize="90px";
+            console.log(p);
+        </script>
+    </body>
+</html>

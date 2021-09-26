@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <table border="1" id="mytab">
+            <caption>My Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody id="mytbody">
+                <tr>
+                    <td>11</td>
+                    <td>Rahul</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Sonam</td>
+                    <td id="mytd">PHP</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>55</td>
+                    <td>Rohan</td>
+                    <td>JSP</td>
+                </tr>
+            </tfoot>
+        </table>
+        <script>
+            var mytable=document.getElementById("mytab");
+            var myrow=mytable.rows;
+            // console.log(myrow);
+            console.log(myrow[0].cells.length);
+            console.log(myrow[0].cells[0]);
+            console.log(myrow[0].cells[2]);
+            console.log(myrow[2].cells.item(0));
+            console.log(myrow[2].cells.namedItem("mytd"));
+            console.log(myrow[1].cells.namedItem("mytd"));
+            console.log(myrow[2].cells[1].innerHTML);
+            myrow[2].cells[1].innerHTML="GeekyShows";
+            var myrow=mytable.rows;
+            // var mycell=myrow[0].insertCell(3);
+            // mycell.innerHTML="New Cell";
+            // console.log(mycell);
+            var mycell1=myrow[0].insertCell(3);
+            var mycell2=myrow[1].insertCell(3);
+            mycell1.innerHTML="Fees";
+            mycell2.innerHTML="10000";
+            myrow[1].deleteCell(0);
+        </script>
+    </body>
+</html>

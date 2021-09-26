@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+
+            // Example-1
+            // Super Class
+            var Mobile=function()
+            {
+
+            }
+            // Prototype Method
+            Mobile.prototype.getModel=function(){return this.model;}
+            // Sub Class
+            var Samsung=function(model,price)
+            {
+                this.model=model;
+                this.price=price;
+            }
+            // Sub Class
+            var Lenovo=function(model,price)
+            {
+                this.model=model;
+            }
+            // Inheritance
+            Samsung.prototype=Object.create(Mobile.prototype);
+            Samsung.prototype.constructor=Samsung;
+            Lenovo.prototype=Object.create(Mobile.prototype);
+            Lenovo.prototype.constructor=Lenovo;
+
+            Samsung.prototype.getPrice=function(){return this.price;}
+   
+            var galaxy=new Samsung('Galaxy',3000);
+            var phab2=new Lenovo('Phab 2');
+            console.log(galaxy.getModel());
+            console.log(phab2.getModel());
+            console.log(galaxy.getPrice());
+
+            // Example-2
+            // Function for Inheritance
+            // function extend(child,parent)
+            // {
+            //     child.prototype=Object.create(parent.prototype);
+            //     child.prototype.constructor=child;
+            // }
+            // // Super Class
+            // var Mobile=function()
+            // {
+
+            // }
+            // // Prototype Method
+            // Mobile.prototype.getModel=function(){return this.model;}
+            // // Sub Class
+            // var Samsung=function(model,price)
+            // {
+            //     this.model=model;
+            //     this.price=price;
+            // }
+            // // Sub Class
+            // var Lenovo=function(model,price)
+            // {
+            //     this.model=model;
+            // }
+            // // Inheritance
+            // extend(Samsung,Mobile);
+            // extend(Lenovo,Mobile);
+
+            // Samsung.prototype.getPrice=function(){return this.price;}
+   
+            // var galaxy=new Samsung('Galaxy',3000);
+            // var phab2=new Lenovo('Phab 2');
+            // console.log(galaxy.getModel());
+            // console.log(phab2.getModel());
+            // console.log(galaxy.getPrice());
+
+            // Example-3
+            // var Mobile=function(model)
+            // {
+            //     this.model=model;
+            // }
+            // Mobile.prototype.getModel=function(){return this.model;}
+            // var Samsung=function(model,price)
+            // {
+            //     Mobile.call(this,model);
+            //     this.price=price;
+            // }
+            // // Inheritance
+            // Samsung.prototype=Object.create(Mobile.prototype);
+            // Samsung.prototype.constructor=Samsung;
+            
+            // var galaxy=new Samsung('galaxy',3000);
+            // console.log(galaxy.getModel());
+            // console.log(galaxy.model);
+        </script>
+    </body>
+</html>

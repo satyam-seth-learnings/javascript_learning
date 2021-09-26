@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <p id="myp" class="myclass" style="background-color: red; font-size: 50px;">Paragraph</p>
+        <script>
+            var p=document.getElementById("myp");
+            // p.className="myclassgeekyshows";
+            // p.setAttribute('class','myclassgeekyshows');
+            // p.setAttribute('title','mytitle');
+            // p.style.fontStyle="italic";
+            p.setAttribute('style','font-style: italic');
+            var getAt=p.getAttribute('id');
+            console.log(p);
+            // console.log(p.id);
+            console.log(getAt);
+        </script>
+    </body>
+</html>

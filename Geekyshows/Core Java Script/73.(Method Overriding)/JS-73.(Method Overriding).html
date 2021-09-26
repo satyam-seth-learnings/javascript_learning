@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            class Father
+            {
+                show()
+                {
+                    return "Super Class <br>";
+                }
+            }
+            class Son extends Father
+            {
+                show()
+                {
+                    return "Son Class <br>";
+                }
+            }
+            var s=new Son();
+            document.write(s.show());
+        </script>
+    </body>
+</html>

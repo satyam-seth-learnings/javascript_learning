@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Passing Anonymous Function As Argument
+			function disp(myfun)
+			{
+				return myfun;
+			}
+			document.write(disp("Geeky"));
+			function show(myfun)
+			{
+				return myfun();
+			}
+			document.write(show(function(){return "Shows";}));
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

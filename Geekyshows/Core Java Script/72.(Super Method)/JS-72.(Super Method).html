@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            // Exapmle-1
+            // class Father
+            // {
+            //     constructor(money)
+            //     {
+            //         this.FMoney=money;
+            //     }
+            //     showFMoney()
+            //     {
+            //         return this.FMoney+" Father Money <br>";
+            //     }
+            // }
+            // class Son extends Father
+            // {
+            //     showSMoney()
+            //     {
+            //         return "Son Money <br>";
+            //     }
+            // }
+            // var s=new Son(10000);
+            // document.write(s.showFMoney());
+            // document.write(s.showSMoney());
+            
+            // Exapmle-2
+            class Father
+            {
+                constructor(money)
+                {
+                    this.FMoney=money;
+                }
+                showFMoney()
+                {
+                    return this.FMoney+" Father Money <br>";
+                }
+            }
+            class Son extends Father
+            {
+                constructor(money)
+                {
+                    super(money);
+                }   
+                showSMoney()
+                {
+                    return "Son Money <br>";
+                }
+            }
+            var s=new Son(10000);
+            document.write(s.showFMoney());
+            document.write(s.showSMoney());
+        </script>
+    </body>
+</html>

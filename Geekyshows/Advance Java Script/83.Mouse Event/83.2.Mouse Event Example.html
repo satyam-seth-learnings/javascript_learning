@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <h1>Mouse Event</h1>
+        Name<input type="text" id="mytext">
+        <script>
+            var txt=document.getElementById("mytext");
+            function chnageColorOrange(e){
+                txt.style.backgroundColor='orange';
+            }
+            function chnageColorWhite(e){
+                txt.style.backgroundColor='white';
+            }
+            txt.addEventListener("mouseover",chnageColorOrange,false);
+            txt.addEventListener("mouseout",chnageColorWhite,false);
+        </script>
+    </body>
+</html>

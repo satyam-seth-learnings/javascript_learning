@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <script>
+            // Example-1
+            // var course={courseName:"JavaScript",duration:"SixMonths",tutor:"Geekyshows"};
+            // // console.log(course.courseName);
+            // // console.log(course.duration);
+            // // console.log(course.tutor);
+            
+            // // c=course.courseName;
+            // // d=course.duration;
+            // // t=course.tutor;
+            // // console.log(c);
+            // // console.log(d);
+            // // console.log(t);
+            
+            // // var {courseName,duration,tutor}=course;
+            // // console.log(courseName);
+            // // console.log(duration);
+            // // console.log(tutor);
+            
+            // // var {courseName:cname,duration:time,tutor:teacher}=course;
+            // // console.log(cname);
+            // // console.log(time);
+            // // console.log(teacher);
+            
+            // // var {courseName,duration}=course;
+            // // console.log(courseName);
+            // // console.log(duration);
+
+            // var {courseName,tutor}=course;
+            // console.log(courseName);
+            // console.log(tutor);
+
+            // Example-2
+            // // var a,b;
+            // // ({a,b}={a:10,b:20});
+            
+            // // var {a,b}={a:10,b:20};
+            // // var {a,b=20}={a:10};
+            // // var {a=40,b=20}={a:90};
+            // // var {a:y=40,b:z=20}={a:90};
+            // var {a:y=40,z=20}={a:90};
+            // console.log(y);
+            // console.log(z);
+
+            // Example-3
+            // var course={
+            //     courseName:"JavaScript",
+            //     duration:"SixMonths",
+            //     tutor:"Geekyshows"
+            // };
+            // // function show(a){
+            // //     console.log(a.courseName);
+            // //     console.log(a.duration);
+            // //     console.log(a.tutor);
+            // // }
+
+            // // function show({courseName,duration,tutor}){
+            // //     console.log(courseName);
+            // //     console.log(duration);
+            // //     console.log(tutor);
+            // // }
+
+            // function show({courseName,duration}){
+            //     console.log(courseName);
+            //     console.log(duration);
+            // }
+            // show(course);
+
+            // Example-4
+            // var course={
+            //     courseName:"JavaScript",
+            //     duration:"SixMonths",
+            //     tutor:"Geekyshows"
+            // };
+            // function show(z){
+            //     return z;
+            // }
+            // var {courseName,duration,tutor}=show(course);
+            // console.log(courseName);
+            // console.log(duration);
+            // console.log(tutor);
+
+            // Example-5
+            var course={
+                courseName:"JavaScript",
+                duration:"SixMonths",
+                tutor:"Geekyshows",
+                student:{
+                    stu1:"Rahul",
+                    stu2:"Sonam"
+                }
+            };
+            // var {courseName,duration,tutor,student:{stu1,stu2}}=course;
+            var {courseName,duration,student:{stu1,stu2}}=course;
+            console.log(courseName);
+            console.log(duration);
+            // console.log(tutor);
+            console.log(stu1);
+            console.log(stu2);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Default Parameter
+			function add(a,b,c=70)	//	function add(a,b=70,c)
+			{
+				document.write("A: "+a+"<br>");
+				document.write("B: "+b+"<br>");
+				document.write("C: "+c+"<br>");
+			}
+			add(10,20,30);
+			add(40,50);
+			add(60);
+			function addition(a,b,c=null)
+			{
+				document.write("A: "+a+"<br>");
+				document.write("B: "+b+"<br>");
+				document.write("C: "+c+"<br>");
+			}
+			addition(10,20,30);
+			addition(40,50);
+			addition(60);
+			function addarr(num,a=[101],b=["Geeky","Shows"])
+			{
+				document.write("A= "+a+"<br>");
+				document.write("B= "+b[0]+" "+b[1]+"<br>");
+				document.write("Num= "+num+"<br>");
+			}
+			addarr(20,[10],[20,30]);
+			addarr(20,[10]);
+			addarr(20,[10],[30]);
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

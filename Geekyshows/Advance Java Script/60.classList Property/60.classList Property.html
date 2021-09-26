@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                background-color: blue;
+            }
+            .myclass2 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass2 myclass3" style="color: yellowgreen;">Paragraph</p>
+        <script>
+            var p=document.getElementById("myp");
+            var elementClass=p.classList;
+            console.log(elementClass);
+            console.log(elementClass[0]);
+            console.log(elementClass[4]);
+            console.log(elementClass.length);
+            console.log(elementClass.value);
+            console.log(elementClass.item(0));
+            console.log(elementClass.item(1));
+            // elementClass.add("myclass4");
+            // elementClass.add("myclass4","myclass5","mycalss6","myclass7");
+            // elementClass.remove("myclass3");
+            // elementClass.remove("myclass3","myclass2");
+            elementClass.replace("myclass2","myclass1");
+            console.log(p);
+            console.log(elementClass);
+            var c=elementClass.contains("myclass2");
+            console.log(c);
+            elementClass.toggle("myclass2");
+        </script>
+    </body>
+</html>

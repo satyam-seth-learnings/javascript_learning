@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <script>
+            // Example-1
+            // function show(){
+            //     console.log("I am Show Function");
+            // }
+            // function geeky(callback){
+            //     callback();
+            // }
+            // geeky(show);
+
+            // Example-2
+            // function show(a){
+            //     console.log("I am Show Function "+a);
+            // }
+            // function geeky(callback){
+            //     var a=101;
+            //     callback(a);
+            // }
+            // geeky(show);
+
+            // Example-3
+            // function show(a){
+            //     console.log("I am Show Function "+a);
+            // }
+            // function geeky(a,callback){
+            //     callback(a);
+            // }
+            // geeky(101,show);
+
+            // Example-4
+            // function geeky(callback){
+            //     var a=101;
+            //     callback(a);
+            // }
+            // // geeky(function show(a){
+            // // geeky(function (a){
+            // geeky(a=>{
+            //     console.log("I am Show Function "+a);
+            // });
+
+            // Example-5
+            // function geeky(callback){
+            //     var a=101;
+            //     callback(a);
+            // }
+            // geeky(a=>console.log("I am Show Function "+a));
+
+            // Example-6
+            // Synchronous
+            // function show(){
+            //     console.log("I am Show Function");
+            // }
+            // function geeky(callback){
+            //     callback();
+            // }
+            // show();
+            // console.log("End");
+                      
+            // Example-7
+            // Asynchronous
+            setTimeout(function show(){
+                console.log("I am Show Function");
+            },5000);
+            console.log("End");
+        </script>
+    </body>
+</html>

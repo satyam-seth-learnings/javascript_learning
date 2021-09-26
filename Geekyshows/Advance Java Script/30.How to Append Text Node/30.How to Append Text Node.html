@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1 id="myh1">We are Learning JavaScript</h1>
+            <h1>I am h1</h1>
+        </div>
+        <script>
+            var targetNode=document.getElementById("myid");
+            // Creating New text Node
+            // var nTNode=document.createTextNode("Text by JavaScript");
+            // Appending New text Node to Div
+            // targetNode.appendChild(nTNode);
+            
+            // Creating and Appending New text Node to Div
+            targetNode.appendChild(document.createTextNode("Text by JavaScript"));
+            console.log(targetNode);
+        </script>
+    </body>
+</html>

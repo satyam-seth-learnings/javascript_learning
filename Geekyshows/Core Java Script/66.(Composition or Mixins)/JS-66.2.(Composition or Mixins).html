@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            // Example-1
+            // Composition or Mixins
+            var eating={
+                eat:function()
+                {
+                    return "I can eat <br>";
+                }
+            };
+            
+            var walking={
+                walk:function()
+                {
+                    return "I can walk <br>";
+                }
+            };
+            
+            var talking={
+                talk:function()
+                {
+                    return "I can talk <br>";
+                }
+            };
+    
+            var starting={
+                start:function()
+                {
+                    return "RoboCop start <br>";
+                }
+            };
+    
+            var Rahul=Object.assign({},eating,walking,talking);
+            var RoboCop=Object.assign({},starting,walking,talking);
+            document.write(Rahul.eat());
+            document.write(Rahul.walk());
+            document.write(Rahul.talk());
+            document.write(RoboCop.start());
+            document.write(RoboCop.walk());
+            document.write(RoboCop.talk());
+            
+            // Example-2
+            // // Composition or Mixins
+            // var eating={
+            //     eat:function()
+            //     {
+            //         return "I can eat <br>";
+            //     }
+            // };
+            
+            // var walking={
+            //     walk:function()
+            //     {
+            //         return "I can walk <br>";
+            //     }
+            // };
+            
+            // var talking={
+            //     talk:function()
+            //     {
+            //         return "I can talk <br>";
+            //     }
+            // };
+    
+            // // Human Class
+            // var Human=function()
+            // {
+            // }
+    
+            // // Robot Class
+            // var Robot=function()
+            // {
+            // }
+
+            // // Compositing Features to Human
+            // Object.assign(Human.prototype,eating,walking,talking);
+            
+            // // Compositing Features to Robot
+            // Object.assign(Robot.prototype,walking,talking);
+
+            // var Rahul=new Human();
+            // var RoboCop=new Robot();
+            // document.write(Rahul.eat());
+            // document.write(Rahul.walk());
+            // document.write(Rahul.talk());
+            // document.write(RoboCop.walk());
+            // document.write(RoboCop.talk());
+
+            // Example-3
+            // // Mixin Function
+            // function mixin(target,...sources)
+            // {
+            //     Object.assign(target,...sources)
+            // }
+            // // Composition or Mixin
+            // var eating={
+            //     eat:function()
+            //     {
+            //         return "I can eat <br>";
+            //     }
+            // };
+            
+            // var walking={
+            //     walk:function()
+            //     {
+            //         return "I can walk <br>";
+            //     }
+            // };
+            
+            // var talking={
+            //     talk:function()
+            //     {
+            //         return "I can talk <br>";
+            //     }
+            // };
+    
+            // // Human Class
+            // var Human=function()
+            // {
+            // }
+    
+            // // Robot Class
+            // var Robot=function()
+            // {
+            // }
+
+            // // Compositing Features to Human
+            // mixin(Human.prototype,eating,walking,talking);
+            
+            // // Compositing Features to Robot
+            // mixin(Robot.prototype,walking,talking);
+
+            // var Rahul=new Human();
+            // var RoboCop=new Robot();
+            // document.write(Rahul.eat());
+            // document.write(Rahul.walk());
+            // document.write(Rahul.talk());
+            // document.write(RoboCop.walk());
+            // document.write(RoboCop.talk());
+        </script>
+    </body>
+</html>

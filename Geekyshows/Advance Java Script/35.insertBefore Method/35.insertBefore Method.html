@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div>
+            <h3>JS Framework</h3>
+            <ul id="myul">
+                <li>Jquery</li>
+                <li id="myang">Angular JS</li>
+                <li>React JS</li>
+                <li id="myd3">D3 JS</li>
+            </ul>
+            <ul>
+                <li>Java Programming</li>
+                <li id="myc">C++ Programming</li>
+            </ul>
+        </div>
+        <script>
+            // parentNode.insertBefore(newNode,referenceNode)
+            // Example-1
+            // // When insert New Element
+            // // Accessing Parent Node
+            // // var parentNode=document.getElementById("myul");
+            // // Creating New li Element
+            // var newNode=document.createElement("li");
+            // // Adding text using textContent
+            // newNode.textContent="Backbone JS";
+            // // Accessing Reference Node
+            // var refNode=document.getElementById("myang");
+            // // Insert New Element
+            // // parentNode.insertBefore(newNode,refNode);
+            // // parentNode.insertBefore(newNode,null);
+            // document.getElementById("myul").insertBefore(newNode,refNode);
+            // // console.log(parentNode);
+
+            // Example-2
+            // // When insert existing node
+            // var parentNode=document.getElementById("myul");
+            // var moveNode=document.getElementById("myd3");
+            // var refNode=document.getElementById("myang");
+            // parentNode.insertBefore(moveNode,refNode);
+            // console.log(parentNode);
+
+            // Example-3
+            // // When insert Text Node
+            // var parentNode=document.getElementById("myul");
+            // var txtNode=document.createTextNode("Hello World");
+            // var refNode=document.getElementById("myang");
+            // parentNode.insertBefore(txtNode,refNode);
+            // console.log(parentNode);
+
+            // Example-4
+            var parentNode=document.getElementById("myul");
+            var moveNode=document.getElementById("myc");
+            var refNode=document.getElementById("myang");
+            parentNode.insertBefore(moveNode,refNode);
+            console.log(parentNode);
+        </script>
+    </body>
+</html>

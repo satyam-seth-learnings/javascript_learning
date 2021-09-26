@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1 id="show">We are Learning JS</h1>
+        <h2>Subscribe GeekyShows</h2>
+        <h2>Now</h2>
+        <p id="geek">Hello
+            <span>GeekyShows</span>
+            <em>World</em>
+            <span>Youtube</span>
+            <b>Hello</b>
+            <h1>Hello H1</h1>
+        </p>
+        <p id="find">
+            <span>Bye</span>
+            GeekyShows
+        </p>
+        <div>
+            <p>1st p inside div</p>
+            <p>2nd p inside div</p>
+        </div>
+        <script>
+            // more specific
+            // var result=document.getElementsByTagName("span");
+            
+            // var getSpan=document.getElementById("geek");
+            // var result=getSpan.getElementsByTagName("span");
+            
+            // var result=document.getElementById("geek").getElementsByTagName("span");
+            var result=document.getElementById("geek").getElementsByTagName("*");
+            document.write(result);
+            console.log(result);
+        </script>
+    </body>
+</html>

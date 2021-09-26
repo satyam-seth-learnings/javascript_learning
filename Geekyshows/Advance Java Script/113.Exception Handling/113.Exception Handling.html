@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <h1>Exception Handling</h1>
+        <script>
+            // Example-1
+            // try{
+            //     // add();
+            //     document.write("Skipped Code <br>");
+            // }
+            // catch(e){
+            //     // document.write("Message:"+e.message+"<br>");
+            //     // document.write("Name:"+e.name+"<br>");
+            //     // document.write("Stack:"+e.stack+"<br>");
+            //     document.write("Function Define nahi hai <br>");
+            // }
+            // finally{
+            //     document.write("get executed whether there is exception or not <br>");
+            // }
+
+            // Example-2
+            function getRectArea(w,h){
+                if(isNaN(w) || isNaN(h)){
+                    throw "Parameter is not a number!";
+                }
+            }
+            try{
+                getRectArea(10,'A');
+            }
+            catch(e){
+                document.write("<br><br>I have no idea what going on above");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			function Phone(){
+								this.model='3310';
+								this.price=function(){document.write(this.model+"Price Rs.3000");};
+							  }
+			var samsung=new Phone();
+			var lg=new Phone();
+			samsung.price();
+			lg.price();
+			function Mobile(model_no){
+								this.model=model_no;
+								this.price=function(){document.write(this.model+"Price Rs.11000");};
+							  }
+			var samsung=new Mobile('Galaxy');
+			var nokia=new Mobile('3310');
+			samsung.price();
+			nokia.price();
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

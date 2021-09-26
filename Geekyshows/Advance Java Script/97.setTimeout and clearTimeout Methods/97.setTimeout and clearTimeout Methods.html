@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <p id="myp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus esse odio dolores porro amet voluptas fugiat deserunt qui? Nulla rerum animi voluptatem corporis labore quisquam optio aspernatur, temporibus debitis! Maiores.</p>
+        <button type="button" id="mybtn">Clear Time</button>
+        <script>
+            // Example-1
+            // function changeCSS(){
+            //     document.getElementById("myp").style='color:red';
+            // }
+            // setTimeout(changeCSS,5000);
+
+            // Example-2
+            // setTimeout(function (){
+            //     document.getElementById("myp").style='color:red';
+            // },2000);
+
+            // Example-3
+            // setTimeout(()=>{
+            //     document.getElementById("myp").style='color:blue';
+            // },2000);
+
+            // Example-4
+            var timeoutID=setTimeout(()=>{
+                document.getElementById("myp").style='color:blue';
+            },5000);
+
+            function clrtime(){
+                clearTimeout(timeoutID);
+            }
+            
+            document.getElementById("mybtn").addEventListener("click",clrtime);
+        </script>
+    </body>
+</html>

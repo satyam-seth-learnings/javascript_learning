@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Declaration Of Object
+			var fees={};
+			//	Initialization In Multiple Line
+			//	Declaration Of Object Properties
+			fees['Rahul']=100;
+			fees["Sumit"]=200;
+			fees.Rohan=300;
+			fees["Super Man"]=400;
+			document.write(fees["Rahul"]);
+			document.write(fees.Sumit);
+			document.write(fees["Rohan"]);
+			document.write(fees["Super Man"]);
+			//	Declaration Of Object Methods
+			fees['total']=function(){return(102+109);};
+			fees.sum=function(){return(340+403);};
+			document.write(fees.total());
+			document.write(fees['total']());
+			document.write(fees.sum());
+			//	Declaretion And Initialization In Single Line
+			//	Object Properties
+			var stu1={Rahul:100,Sumit:200,Rohan:300};
+			document.write(stu1['Rahul']);
+			document.write(stu1["Rohan"]);
+			document.write(stu1.Sumit);
+			var sulk={
+						Rahul:400,
+						Sumit:500,
+						"Super Man":600
+					};
+			document.write(sulk['Rahul']);
+			document.write(sulk.Sumit);
+			document.write(sulk["Super Man"]);
+			//	Object Methods
+			var stu2={Ram:700,total:function(){return(102+109);}};
+			document.write(stu2.total());
+			document.write(stu2['total']());
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

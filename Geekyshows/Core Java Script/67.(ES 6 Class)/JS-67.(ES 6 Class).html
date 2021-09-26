@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            /*
+            var Mobile=function()
+            {
+                this.model='Galaxy';
+                this.show=function()
+                {
+                    return "Class using Constructor";
+                }
+            }
+            // Prototype Member
+            Mobile.prototype.display=function(){
+                return "Prototype Method";
+            }
+            */
+           // Class Declaration
+           class Mobile
+           {
+               constructor()
+               {
+                   // Instance Member
+                   var x=10;    // Privete
+                   this.a=12;
+                   this.show=function(){
+                       return "Instance Member";
+                   };
+               }
+                // Prototype Member
+                display()
+                {
+                    return "Prototype Member";
+                }
+           }
+           var nokia=new Mobile();
+           document.write(nokia.a);
+           document.write(nokia.x);
+           document.write(nokia.show());
+           document.write(nokia.display());
+        </script>
+    </body>
+</html>

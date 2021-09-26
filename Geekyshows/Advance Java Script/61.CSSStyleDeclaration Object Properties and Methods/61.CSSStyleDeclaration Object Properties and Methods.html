@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <p id="myp" style="background-color: darkgray; color: black !important; font-size: 30px;">Paragraph</p>
+        <script>
+            var p=document.getElementById("myp");
+            var cs=p.style;
+            // cs.cssText="font-size: 70px; color: blue;";
+            console.log(cs.cssText);
+            console.log(cs.length);
+            console.log(cs.item(1));
+            console.log(cs.item(0));
+            console.log(cs[0]);
+            var propPriority=cs.getPropertyPriority('color');
+            console.log(propPriority);
+            var propvalue=cs.getPropertyValue('color');
+            console.log(propvalue);
+            cs.removeProperty('color');
+            // cs.setProperty('font-size','90px','important');
+            console.log(p);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Returning Anonymous Function
+			function disp(a)
+			{
+				return function(b)
+								{
+									return a+b;
+								};
+			}
+			var af=(disp(10));
+			document.write(af(20));
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

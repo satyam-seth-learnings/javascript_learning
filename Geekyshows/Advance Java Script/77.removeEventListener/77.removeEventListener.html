@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <h1>Remove Event Listener</h1>
+        <button id="mybtn">Click Me</button>
+    </body>
+    <script>
+        function show(){
+            alert("Button Clicked");
+        }
+        var btn=document.getElementById("mybtn");
+        btn.addEventListener("click",show,false);
+        btn.addEventListener("click",show,true);
+        
+        btn.removeEventListener("click",show,true);
+    </script>
+</html>

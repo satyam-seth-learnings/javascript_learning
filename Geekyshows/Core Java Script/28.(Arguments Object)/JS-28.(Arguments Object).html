@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			//	Arguments Object
+			function display(name)
+			{
+				document.write(name+" ");
+				document.write(arguments[0]+" ");
+				document.write(arguments.callee);
+			}
+			display("GeekyShows");
+			function stu(name1,name2)
+			{	
+				arguments[1]="Hello";
+				document.write(name1+" ");
+				document.write(name2+" ");
+				document.write(arguments.length+" ");
+				document.write(arguments[0]+" "+arguments[1]+" ");
+				var l=arguments.length;
+				document.write(l+" ");
+				for(var i=0;i<arguments.length;i++)
+				{
+					document.write(arguments[i]+" ");
+				}
+			}
+			stu("Satyam","Seth");
+			stu("arg1","arg2","arg3");
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

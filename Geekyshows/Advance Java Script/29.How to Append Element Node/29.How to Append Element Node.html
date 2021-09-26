@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1 id="myh1">We are Learning JavaScript</h1>
+            <h1>I am h1</h1>
+        </div>
+        <section id="mysec">
+
+        </section>
+        <script>
+            // Example-1
+            // Appending existing element
+            // var myid=document.getElementById("myid");
+            // console.log(myid);
+            var mysec=document.getElementById("mysec");
+            // console.log(mysec);
+            var myh1=document.getElementById("myh1");
+            mysec.appendChild(myh1);
+            console.log(myid);
+            console.log(mysec);
+
+            // Example-2
+            // Creating a new Element Node h2
+            // var nENode=document.createElement("h2");
+            var targetNode=document.getElementById("myid");
+            // Appending New h2 to div
+            // targetNode.appendChild(nENode);
+            // Creating and Appending New h2 to Div
+            targetNode.appendChild(document.createElement("h2"));
+            console.log(targetNode);
+        </script>
+    </body>
+</html>

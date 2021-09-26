@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geeky Shows</title>
+    </head>
+    <body>
+        <h1>Add Event Listener</h1>
+        <button id="mybtn">Click Me</button>
+    </body>
+    <script>
+        // Example-1
+        // function show(){
+        //     alert("Button Clicked");
+        // }
+        // var btn=document.getElementById("mybtn");
+        // // btn.addEventListener("click",function(){alert("Button Clicked");});
+        // // btn.addEventListener("click",show);
+        // btn.addEventListener("mouseover",show);
+
+        // Example-2
+        function disp1(){
+            alert("Button Clicked 1");
+        }
+        function disp2(){
+            alert("Button Clicked 2");
+        }
+        var btn=document.getElementById("mybtn");
+        btn.addEventListener("click",disp1); 
+        btn.addEventListener("click",disp2); 
+    </script>
+</html>

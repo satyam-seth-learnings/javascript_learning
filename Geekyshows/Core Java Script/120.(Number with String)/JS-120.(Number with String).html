@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            // Number with String
+            var a="50";
+            var b=10;
+            var c=20;
+            var d="Hello";
+
+            // + work as concat with string
+            document.write(b+c+"<br>");
+            document.write(a+b+"<br>");
+            document.write(b+a+"<br>");
+            document.write(b+d+"<br>");
+            document.write(d+b+"<br>");
+            document.write("<br>");
+
+            // other than +
+            document.write(c-b+"<br>");
+            document.write(a-b+"<br>");
+            document.write(b-a+"<br>");
+            document.write(b-d+"<br>");
+            document.write(d-b+"<br>");
+            document.write("<br>");
+
+            // Type of
+            document.write(typeof(b+c)+"<br>"); // Number + Number = Number
+            document.write(typeof(a+b)+"<br>"); // String + Number = String
+            document.write(typeof(b+a)+"<br>"); // Number + String = String
+            document.write(typeof(b+d)+"<br>"); // Number + String = String
+            document.write(typeof(d+b)+"<br>"); // String + Number = String
+            document.write("<br>");
+
+            // other than +
+            document.write(typeof(c-b)+"<br>"); // Number - Number = Number
+            document.write(typeof(a-b)+"<br>"); // String - String = Number
+            document.write(typeof(b-a)+"<br>"); // Number - String = Number
+            document.write(typeof(b-d)+"<br>"); // Number - Number = NaN
+            document.write(typeof(d-b)+"<br>"); // String - Number = NaN
+            document.write("<br>");
+
+            document.write(b+c+a);
+            document.write(a+b+c);
+            document.write("Result: "+b+c);
+            document.write("Result: "+(b+c));
+            document.write(b+c+"Result: ");
+        </script>
+    </body>
+</html>

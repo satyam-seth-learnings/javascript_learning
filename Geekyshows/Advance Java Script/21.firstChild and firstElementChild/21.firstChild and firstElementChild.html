@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1 id="myid">
+            <!-- This is Comment -->
+            <span>We are Learning JS</span>
+            <em>Hello</em>
+        </h1>
+        <p id="myid1">I am Paraghraph</p>
+        <p id="myid2">
+            <span>I am span</span>
+            I am Paraghraph
+        </p>
+        <script>
+            // firstChild is same as childNode[0]
+            // firstElementChild is same as children[0]
+            var result=document.getElementById("myid");
+            // console.log(result.firstChild);
+            console.log(result.firstElementChild);
+            // document.write(result.firstElementChild.textContent);
+            // result.firstElementChild.textContent="I am Learning DOM";
+            document.write(result.firstChild.textContent);
+            result.firstChild.textContent="Hello World";
+        </script>
+    </body>
+</html>

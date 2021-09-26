@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title class="geek">Tree</title>
+    </head>
+    <body>
+        <h1 id="myid" class="myclass">
+            We are Learning JS
+            <!-- This is Comment -->
+        </h1>
+        <p id="myid1">I am Paraghraph</p>
+        <script>
+            // Example-1
+            // nodeName, nodeValue // deprecated
+            // var result=document.getElementById("myid");
+            // // var getAttr=result.attributes[0].nodeName;
+            // // var getAttr=result.attributes[0].nodeValue;
+            // // document.write(getAttr);
+            // document.write(result.attributes[0].nodeName+" = ");
+            // document.write(result.attributes[0].nodeValue+"<br>");
+            // document.write(result.attributes[1].nodeName+" = ");
+            // document.write(result.attributes[1].nodeValue+"<br>");
+            // document.write(result.attributes.length+"<br>");
+            // for(let i=0;i<result.attributes.length;i++)
+            // {
+            //     document.write(result.attributes[i].nodeName+" = ");
+            //     document.write(result.attributes[i].nodeValue+"<br>");
+            // }
+
+            // Example-2
+            // Attribute Properties - name, value
+            var result=document.getElementById("myid");
+            // var getAttr=result.attributes[0].name;
+            // var getAttr=result.attributes[0].value;
+            // var getAttr=result.attributes[1].name;
+            // var getAttr=result.attributes[1].value;
+            // document.write(getAttr);
+            document.write(result.attributes[0].name+" = ");
+            document.write(result.attributes[0].value+"<br>");
+            document.write(result.attributes[1].name+" = ");
+            document.write(result.attributes[1].value+"<br>");
+            for(let i=0;i<result.attributes.length;i++)
+            {
+                document.write(result.attributes[i].name+" = ");
+                document.write(result.attributes[i].value+"<br>");
+            }
+        </script>
+    </body>
+</html>

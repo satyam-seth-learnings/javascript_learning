@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			function Mobile(model_no){
+								this.model=model_no;
+								this.memory=4;
+								this.color='black';
+							  }
+			var samsung=new Mobile('Galaxy');
+			var nokia=new Mobile('3310');
+			if(typeof nokia.memory !=='undefined')
+			{
+				document.write("Available");
+			}
+			else
+			{
+				document.write("Doesn't Exist");
+			}
+			if('model' in samsung)
+			{
+				document.write("Available");
+			}
+			else
+			{
+				document.write("Doesn't Exist");
+			}
+			if(nokia.hasOwnProperty('color'))
+			{
+				document.write("Available");
+			}
+			else
+			{
+				document.write("Doesn't Exist");
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

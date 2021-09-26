@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			var a=10;
+			let b=20;
+			const c=30;
+			document.write(a+"<br>");
+			document.write(b+"<br>");
+			document.write(c+"<br>");
+			function myvar()
+						{
+							var x=30;
+							if(true)
+							{	
+								var x=40;
+								document.write(x+"<br>");
+							}
+							document.write(x+"<br>");
+						}
+			myvar();
+			function mylet()
+						{
+							let x=70;
+							if(true)
+							{	
+								let x=90;
+								document.write(x+"<br>");
+							}
+							document.write(x+"<br>");
+						}
+			mylet();
+			for(var i=0;i<5;i++)
+			{	
+				document.write(i+"<br>");
+			}
+			document.write(i+"<br>");
+			for(let j=0;j<5;j++)
+			{	
+				document.write(j+"<br>");
+			}
+			document.write(j+"<br>");	//	Error
+			
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

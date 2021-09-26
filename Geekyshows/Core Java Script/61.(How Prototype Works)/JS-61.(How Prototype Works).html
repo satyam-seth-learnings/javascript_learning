@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GeekyShows</title>
+    </head>
+    <body>
+        <script>
+            // Example-1
+            function Mobile()
+            {
+            }
+            document.write(Mobile);
+            console.log(Mobile.prototype);
+            var lg=new Mobile();
+            console.log(lg.__proto__);
+            // verify
+            console.log(Mobile.prototype===lg.__proto__);
+            console.log(Mobile===lg.__proto__.constructor);
+            console.log(Mobile===Mobile.prototype.constructor);
+            
+            // Example-2
+            // function Mobile()
+            // {
+            // }
+            // var lg=new Mobile();
+            // console.log(lg.a); //undefined
+            
+            // Example-3
+            // function Mobile()
+            // {
+            // }
+            // Mobile.prototype.a=10;
+            // var lg=new Mobile();
+            // console.log(lg.a); //10
+            
+            // Example-4
+            // function Mobile()
+            // {
+            //     this.a=20;
+            // }
+            // Mobile.prototype.a=10;
+            // var lg=new Mobile();
+            // console.log(lg.a); //20
+        
+        </script>
+    </body>
+</html>

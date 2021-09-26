@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			function Mobile(model_no){
+								this.model=model_no;
+								this.color='white';
+								this.ram='4GB';
+								this.price=function(){document.write(this.model+"Price Rs.11000 <br>");};
+							  }
+			var samsung=new Mobile('Galaxy');
+			var nokia=new Mobile('3310');
+			for(var specs in nokia)
+			{
+				document.write(nokia[specs]+"<br>");
+			}
+			for(var specs in samsung)
+			{
+				if(typeof samsung[specs] !=='function')
+				{
+					document.write(specs+" "+samsung[specs]+"<br>");
+				}
+			}
+			document.write(Object.keys(samsung));
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>

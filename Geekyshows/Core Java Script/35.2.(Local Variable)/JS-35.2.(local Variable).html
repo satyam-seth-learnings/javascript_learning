@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+		<script type="text/javascript">
+			function show()	
+			{
+				j="I am Global variable";	//	Global Variable
+				var i="I am local variable";	//	Local Variable
+				document.write(i+"<br>");	//	Inside function
+			}
+			show();
+			document.write(j+"<br>");	//	Outside function
+			function outfun()
+			{
+				var k="k a Local variable of outer function";
+				document.write(k+"<br>");
+				function innerfun()
+				{
+					var l="l a Local variable of inner function";
+					document.write(l+"<br>");
+					document.write(k+"<br>");
+				}
+				innerfun();
+			}
+			outfun();
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue;">Example Of Heading h1</h1>
+	</body>
+</html>
