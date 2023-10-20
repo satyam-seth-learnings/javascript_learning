@@ -15,8 +15,9 @@
     - ![Call Stack](call-stack.png)
 
     - Call Stack is also known as 
-        1.Machine Stack
-        2.Execution Context Stack
-        3.Program Stack
-        4.Control Stack
-        5.Runtime Stack
+
+      1. Machine Stack
+      2. Execution Context Stack
+      3. Program Stack
+      4. Control Stack
+      5. Runtime Stack
