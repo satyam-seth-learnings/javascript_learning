@@ -1,0 +1,1 @@
+[Hoisting in JavaScript 🔥(variables & functions)](https://youtu.be/Fnlnw8uY6jo?si=cg8KDSVnkBxqMXGT)
